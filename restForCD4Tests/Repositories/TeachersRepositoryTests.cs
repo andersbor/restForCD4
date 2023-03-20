@@ -14,7 +14,8 @@ namespace restForCD4.Repositories.Tests
         [TestMethod()]
         public void GetAllTest()
         {
-            Assert.Fail();
+            TeachersRepository repo = new();
+            Assert.AreEqual(2, repo.GetAll().Count);
         }
     }
 }
